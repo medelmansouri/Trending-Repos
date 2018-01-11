@@ -1,0 +1,94 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:layout_collapseMode="pin"
+    android:elevation="4dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:layout_scrollFlags="scroll|enterAlways"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:outlineProvider="bounds"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/toolbarmenucontainer"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:elevation="20dp"
+
+        >
+
+        <LinearLayout android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ImageButton
+                android:layout_marginTop="5dp"
+                android:id="@+id/btrending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_selected"
+                android:background="@color/colorPrimary"
+                android:layout_weight="8"
+                android:textColor="@color/colorSelected"
+
+                />
+            <TextView
+                android:id="@+id/tvtrending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/colorSelected"
+                android:layout_marginBottom="5dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            >
+
+            <ImageButton
+                android:layout_marginTop="5dp"
+                android:id="@+id/bsettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_settings_not_selected"
+                android:textColor="@color/colorNotSelected"
+
+                />
+            <TextView
+                android:id="@+id/tvsettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/colorNotSelected"
+                android:layout_marginBottom="5dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
